@@ -30,9 +30,9 @@ import numpy as np
 import pandas as pd
 from scipy.stats import poisson, spearmanr
 
-from season_model.league_table import compute_league_table
-from season_model.predictor import HOME_ADVANTAGE, expected_goals, simulate_season
-from season_model.team_strength import TeamStrength, compute_team_strength
+from football_data_analysis.core.league_table import compute_league_table
+from football_data_analysis.analyses.season_prediction.predictor import HOME_ADVANTAGE, expected_goals, simulate_season
+from football_data_analysis.analyses.season_prediction.team_strength import TeamStrength, compute_team_strength
 
 OUTCOMES = ("H", "D", "A")
 PROB_COLUMNS = ["p_home", "p_draw", "p_away"]

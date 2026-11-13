@@ -1,8 +1,8 @@
 import pandas as pd
 import pytest
 
-from season_model import config as cfg
-from season_model.pipeline import competitions_found, process_season, validate_season
+from football_data_analysis.core import config as cfg
+from football_data_analysis.core.pipeline import competitions_found, process_season, validate_season
 
 
 def _row(team1, location, team2, result, competition, matchweek, played):

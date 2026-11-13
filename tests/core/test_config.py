@@ -1,4 +1,4 @@
-from season_model.config import FERMEDO_2024_25, MANSORES_2025_26, define_season, epoca_id_for, get_season, with_epoca
+from football_data_analysis.core.config import FERMEDO_2024_25, MANSORES_2025_26, define_season, epoca_id_for, get_season, with_epoca
 
 
 def test_every_team_url_is_pinned_to_the_season_id():

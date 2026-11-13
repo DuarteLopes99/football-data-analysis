@@ -1,6 +1,6 @@
 import pandas as pd
 
-from season_model.fixtures import split_played_remaining
+from football_data_analysis.core.fixtures import split_played_remaining
 
 
 def _raw_row(location, team2, result, played, matchweek="J1"):

@@ -1,6 +1,6 @@
 import pandas as pd
 
-from season_model.league_table import compute_league_table
+from football_data_analysis.core.league_table import compute_league_table
 
 
 def test_compute_league_table_points_and_gd():

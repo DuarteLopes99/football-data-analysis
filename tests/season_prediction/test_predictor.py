@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
 
-from season_model.league_table import compute_league_table
-from season_model.predictor import simulate_season
+from football_data_analysis.core.league_table import compute_league_table
+from football_data_analysis.analyses.season_prediction.predictor import simulate_season
 
 PLAYED = pd.DataFrame(
     [

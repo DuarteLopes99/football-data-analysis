@@ -30,8 +30,8 @@ from dataclasses import dataclass
 
 import pandas as pd
 
-from season_model.config import SeasonConfig, get_season
-from season_model.fixtures import load_processed, load_raw_team_fixtures, save_processed, split_played_remaining
+from football_data_analysis.core.config import SeasonConfig, get_season
+from football_data_analysis.core.fixtures import load_processed, load_raw_team_fixtures, save_processed, split_played_remaining
 
 ALL_COMPETITIONS_SUFFIX = "_all_competitions.csv"
 LEAGUE_SUFFIX = "_fixtures.csv"
@@ -75,7 +75,7 @@ def scrape_season(
     Selenium is imported here, not at module level, so processing and
     modelling work on a machine without Chrome.
     """
-    from season_model.scraping.zerozero_client import RateLimitedError, chrome_driver, fetch_team_fixtures
+    from football_data_analysis.core.scraping.zerozero_client import RateLimitedError, chrome_driver, fetch_team_fixtures
 
     season = _as_season(season)
     urls = season.team_urls

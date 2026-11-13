@@ -4,7 +4,7 @@ Low-level, page-at-a-time functions. Every function takes an already-open
 Selenium ``driver`` so callers control the browser lifecycle (see
 ``chrome_driver()``) instead of spinning up a new browser per request. The
 season-level orchestration (which teams, where files go, resuming after a rate
-limit) lives in ``season_model.pipeline``.
+limit) lives in ``football_data_analysis.core.pipeline``.
 
 Ported from the exploratory notebooks in ``StatsSports/_archive`` (``dev.ipynb``,
 ``Dev_Mansores_Predict.ipynb``, ``dev_games_stats.ipynb``, ``dev_player_URL.ipynb``).

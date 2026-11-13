@@ -1,9 +1,9 @@
 """CLI: scrape and process fixtures for a configured season.
 
 Usage:
-    python -m season_model.scraping.cli mansores_2025_26
-    python -m season_model.scraping.cli mansores_2025_26 --overwrite --teams mansores crc_vale
-    python -m season_model.scraping.cli mansores_2025_26 --no-scrape     # re-process raw only
+    python -m football_data_analysis.core.scraping.cli mansores_2025_26
+    python -m football_data_analysis.core.scraping.cli mansores_2025_26 --overwrite --teams mansores crc_vale
+    python -m football_data_analysis.core.scraping.cli mansores_2025_26 --no-scrape     # re-process raw only
 
 Resumable: teams already on disk are skipped unless --overwrite. If zerozero's
 rate limit is hit, wait a few minutes and run the same command again.
@@ -14,8 +14,8 @@ from __future__ import annotations
 import argparse
 import sys
 
-from season_model.config import get_season, list_seasons
-from season_model.pipeline import process_season, scrape_season, validate_season
+from football_data_analysis.core.config import get_season, list_seasons
+from football_data_analysis.core.pipeline import process_season, scrape_season, validate_season
 
 
 def main(argv: list[str] | None = None) -> int:

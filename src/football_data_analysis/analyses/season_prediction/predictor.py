@@ -31,8 +31,8 @@ import numpy as np
 import pandas as pd
 from scipy.stats import poisson
 
-from season_model.league_table import STANDINGS_COLUMNS, compute_league_table
-from season_model.team_strength import TeamStrength, compute_team_strength
+from football_data_analysis.core.league_table import STANDINGS_COLUMNS, compute_league_table
+from football_data_analysis.analyses.season_prediction.team_strength import TeamStrength, compute_team_strength
 
 HOME_ADVANTAGE = 1.15
 """Default multiplier on the home side's expected goals. A fixed guess carried

@@ -12,7 +12,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from season_model.config import SeasonConfig
+from football_data_analysis.core.config import SeasonConfig
 
 PLAYED_COLUMNS = ["Numeric Matchweek", "Matchweek", "Home Team", "Away Team", "Home Goals", "Away Goals"]
 REMAINING_COLUMNS = ["Numeric Matchweek", "Matchweek", "Home Team", "Away Team"]

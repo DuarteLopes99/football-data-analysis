@@ -1,8 +1,8 @@
 """Regression checks against the real seeded season data in data/seasons/."""
 
-from season_model.config import get_season
-from season_model.fixtures import load_processed
-from season_model.league_table import compute_league_table
+from football_data_analysis.core.config import get_season
+from football_data_analysis.core.fixtures import load_processed
+from football_data_analysis.core.league_table import compute_league_table
 
 
 def test_mansores_actual_record_matches_known_result():

@@ -19,7 +19,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_ROOT = REPO_ROOT / "data"
 
 # Two seasons with a known zerozero id: 2024/25 -> 154 and 2025/26 -> 155. The

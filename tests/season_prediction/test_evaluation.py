@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from season_model.config import get_season
-from season_model.evaluation import (
+from football_data_analysis.core.config import get_season
+from football_data_analysis.analyses.season_prediction.evaluation import (
     backtest,
     brier_score,
     fit_venue_factors,
@@ -12,7 +12,7 @@ from season_model.evaluation import (
     ranked_probability_score,
     split_at_matchweek,
 )
-from season_model.fixtures import load_processed
+from football_data_analysis.core.fixtures import load_processed
 
 
 def test_rps_is_zero_for_a_certain_correct_call_and_penalises_distance():
