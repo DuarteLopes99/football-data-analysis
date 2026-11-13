@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Scraped and processed fixtures are the dataset and are tracked. The
+# all-competitions files are a scrape by-product (cup ties, friendlies) used
+# only to pick a competition name, so they stay local.
+data/seasons/**/raw/*_all_competitions.csv
